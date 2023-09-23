@@ -1,0 +1,16 @@
+<p>Casts</p>
+
+<div class="scroll">
+  <div *ngFor="let cast of casts">
+    <img
+      [src]="'https://image.tmdb.org/t/p/w500/' + cast['profile_path']"
+      alt=""
+      height="200px"
+      width="200px"
+      style="border-radius: 50%"
+    />
+    <br />
+    <h4>{{ cast["name"] }}</h4>
+    <h4>{{ cast["character"] }}</h4>
+  </div>
+</div>

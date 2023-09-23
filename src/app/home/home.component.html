@@ -1,0 +1,51 @@
+<h1>Now Playing Movies</h1>
+<div class="scroll">
+  <div *ngFor="let movie of nowplayinglist" (click)="goToDetails(movie['id'])">
+    <img
+      [src]="'https://image.tmdb.org/t/p/w500/' + movie['poster_path']"
+      alt=""
+      height="200px"
+    />
+    <br />
+    <h4>{{ movie["title"] }}</h4>
+  </div>
+</div>
+
+<h1>Popular Movies</h1>
+<div class="scroll">
+  <div *ngFor="let movie of popularlist">
+    <img
+      [src]="'https://image.tmdb.org/t/p/w500/' + movie['poster_path']"
+      alt=""
+      height="200px"
+    />
+    <br />
+    <h4>{{ movie["title"] }}</h4>
+  </div>
+</div>
+
+<h1>Upcoming Movies</h1>
+<div class="scroll">
+  <div *ngFor="let movie of upcominglist">
+    <img
+      [src]="'https://image.tmdb.org/t/p/w500/' + movie['poster_path']"
+      alt=""
+      height="200px"
+    />
+    <br />
+    <h4>{{ movie["title"] }}</h4>
+  </div>
+</div>
+
+<h1>Top Rated Movies</h1>
+<div class="scroll">
+  <div *ngFor="let movie of topratedlist">
+    <img
+      [src]="'https://image.tmdb.org/t/p/w500/' + movie['poster_path']"
+      alt=""
+      height="200px"
+    />
+    <br />
+    <h4>{{ movie["title"] }}</h4>
+  </div>
+</div>
